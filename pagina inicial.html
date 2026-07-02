@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alessandro Marques dos Santos | Cartão Digital</title>
+    <style>
+        /* Reset de Estilos Básicos */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container Principal simula a tela do celular */
+        .card-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #1f1f1f;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+            position: relative;
+        }
+
+        /* Símbolo de Balança da Justiça Sóbrio */
+        .logo-section {
+            margin-bottom: 25px;
+        }
+        
+        .logo-icon {
+            font-size: 50px;
+            color: #d4af37;
+            font-weight: 300;
+        }
+
+        /* Cabeçalho de Identificação */
+        .header-section {
+            margin-bottom: 35px;
+        }
+
+        .name {
+            font-family: 'Georgia', serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4af37;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .oab {
+            font-size: 16px;
+            color: #b3b3b3;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 20px;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        /* Bloco de Áreas de Atuação */
+        .expertise-section {
+            margin: 30px auto;
+            text-align: left;
+            width: 95%;
+            background-color: #262626;
+            padding: 20px 25px;
+            border-left: 4px solid #d4af37;
+            border-radius: 4px;
+        }
+
+        .expertise-title {
+            font-size: 14px;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .expertise-list {
+            list-style: none;
+        }
+
+        .expertise-item {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .expertise-item::before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: #d4af37;
+            font-size: 18px;
+            top: -2px;
+        }
+
+        .expertise-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Seção de Links e Botões Interativos */
+        .buttons-section {
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #2a2a2a;
+            border: 1px solid #d4af37;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efeito de Hover/Clique */
+        .btn:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+        }
+
+        .btn:hover .btn-subtext {
+            color: #333333;
+        }
+
+        .btn-text {
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .btn-subtext {
+            font-size: 11px;
+            color: #a6a6a6;
+            margin-top: 4px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        /* Rodapé de Informações */
+        .footer-section {
+            margin-top: 40px;
+        }
+
+        .email-display {
+            font-size: 13px;
+            color: #d4af37;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .instructions {
+            font-size: 11px;
+            color: #888888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Logo Icon -->
+        <div class="logo-section">
+            <div class="logo-icon"><img src="file:///C:/Users/mark_/Downloads/Captura%20de%20tela%202026-07-02%20190014.png"></div>
+        </div>
+
+        <!-- Identificação Institucional -->
+        <div class="header-section">
+            <h1 class="name">Alessandro Marques dos Santos</h1>
+            <div class="oab">OAB/PR 135.935</div>
+            <div class="title">Advogado | Consultor Jurídico</div>
+        </div>
+
+        <!-- Áreas de Atuação Proporcional OAB -->
+        <div class="expertise-section">
+            <div class="expertise-title">Áreas de Atuação</div>
+            <ul class="expertise-list">
+                <li class="expertise-item">Consultoria Institucional e Direito Público</li>
+                <li class="expertise-item">Compliance e Gestão de Riscos</li>
+                <li class="expertise-item">Direito Tributário e Penal</li>
+            </ul>
+        </div>
+
+        <!-- Botões Interativos -->
+        <div class="buttons-section">
+            <!-- Insira os links corretos nos atributos href -->
+            <a class="btn" href="https://wa.me/5541999999999" target="_blank" data-platform="WhatsApp">
+                <span class="btn-text">WhatsApp Professional</span>
+                <span class="btn-subtext">Clique para iniciar uma consulta</span>
+            </a>
+            
+            <a class="btn" href="https://www.linkedin.com/in/seu-perfil" target="_blank" data-platform="LinkedIn">
+                <span class="btn-text">Perfil LinkedIn</span>
+                <span class="btn-subtext">Conecte-se profissionalmente</span>
+            </a>
+            
+            <a class="btn" href="https://www.instagram.com/seu-perfil" target="_blank" data-platform="Instagram">
+                <span class="btn-text">Instagram</span>
+                <span class="btn-subtext">Acompanhe análises e atualizações</span>
+            </a>
+            
+            <a class="btn" href="https://www.facebook.com/sua-pagina" target="_blank" data-platform="Facebook">
+                <span class="btn-text">Página do Facebook</span>
+                <span class="btn-subtext">Visite nossa página institucional</span>
+            </a>
+        </div>
+
+        <!-- Rodapé Legal e Informativo -->
+        <div class="footer-section">
+            <a href="mailto:advogado.alessandro.marques@gmail.com" class="email-display">
+                advogado.alessandro.marques@gmail.com
+            </a>
+            <div class="instructions">Clique em qualquer item para interagir direto do seu celular.</div>
+        </div>
+    </div>
+
+    <!-- Lógica de Interação JavaScript -->
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const platform = this.getAttribute('data-platform');
+                // Log sutil no console para auditoria ou monitoramento interno de cliques
+                console.log(`Redirecionando usuário para a plataforma: ${platform}`);
+                
+                // Feedback visual rápido ao tocar (Mobile-friendly)
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
